@@ -13,4 +13,7 @@ class Article < ApplicationRecord
     created_at.strftime('%B %e, %Y')
   end
 
+  def is_member_only?
+    is_member_only
+  end
 end
